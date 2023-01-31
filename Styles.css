@@ -1,0 +1,363 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* Setup Typography */
+
+html {
+    font-family: 'Cabin', sans-serif;
+    font-size: 125%;
+}
+
+body {
+    position: fixed;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.curlyFont {
+    font-family: 'Great Vibes', cursive;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+figure {
+    margin: 0;
+}
+
+h3 {
+    margin: 0 auto;
+}
+
+/* Wrapper */
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* Header styles */
+
+header {
+    background-image: url(./Images/asset-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+}
+
+.listWrapper li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+.listWrapper a {
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 25%;
+    padding: 0 30px;
+}
+
+.flexWrapper h2 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.listWrapper {
+    display: flex;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+}
+
+.titleContainer h1 {
+    position: relative;
+    bottom: 95px;
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+.titleContainer p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.centeringFlex{
+    height: 50vh;
+}
+
+/* About Tasty styles */
+
+.aboutTasty {
+    min-height: 40vh;
+    background-color: #EAEDF4;
+    display: flex;
+    align-items: center;
+}
+
+.aboutTasty div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutTasty h3 {
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+.aboutTasty p {
+    font-size: .7rem;
+    line-height: 20px;
+    text-align: center;
+}
+
+.yellowButton {
+    background-color: #FDC800;
+    padding: 10px 50px;
+    text-transform: uppercase;
+}
+
+/* link section */
+
+.linkSection {
+    background-color: #232323;
+    min-height: 10vh;
+}
+
+.linkSection a {
+    color: white;
+}
+
+.linkSection figure {
+    width: 30px;
+    height: 30px;
+    margin: 10px 4vw;
+}
+
+.linkFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.linkFlex div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* image gallery section */
+
+.imageGallery {
+    min-height: 45vh;
+    background-color: #f8f8f8;
+}
+
+.galleryFlex {
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.galleryFlex Figure {
+    margin: 0 2vw; 
+    max-height: 280px;
+    max-width: 280px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+/* cookingTips Section styles */
+
+.corneredImageFlex {
+    display: flex;
+    flex-direction: column;
+    background-color: #EAEDF4;
+    align-items: center;
+}
+
+.cookingTipsDivider {
+    display: flex;
+}
+
+.cookingTips {
+    min-height: 35vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+}
+
+.cookingTipsFlex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: .9rem;
+}
+
+.cookingTipsFlex h3 {
+    text-transform: uppercase;
+}
+
+.cookingTipsImage {
+    width: 50vw;
+}
+
+.cookingTipsImage figure {
+    height: 35vh;
+    background-color: #f8f8f8;;
+}
+
+.cookingTipsImage img {
+    height: 100%;
+}
+
+/* Meet the Cook section */
+
+.meetTheCook {
+    min-height: 40vh;
+}
+
+.cookTextFlex {
+    min-height: 90%;
+}
+
+.meetTheCookFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meetTheCookFlex h3 {
+    font-weight: 100;
+    font-size: 1.4rem;
+}
+
+.meetTheCookFlex figure {
+    height: 30%;
+    min-width: 30%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+
+.meetTheCookFlex p {
+    font-size: .8rem;
+}
+
+.meetTheCook a {
+    display: inline-block;
+}
+
+/* footerStyles */
+
+footer {
+    background-color: #232323;
+}
+
+.footerFlex {
+    display: flex;
+    min-height: 20vh;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.footerFlex ul {
+    padding: 0;
+}
+
+.footerFlex h3 {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.footerFlex ul, .footerFlex p {
+    color: white;
+    font-size: .5rem;
+    font-weight: 100;
+    line-height: 20px;
+    list-style: none;
+}
+
+.footerFlex button.yellowButton {
+    border: none;
+    padding: 10px 20px; 
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.footerFlex input {
+    border: none;
+    width: 35vw;
+}
+
+.footerFlex input::placeholder {
+    padding-left: 20px;
+    font-size: .6rem;
+    font-weight: 700;
+    position: relative;
+    bottom: 2px;
+}
+
+.contactFlex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 15%;
+    
+}
+
+.inputFlex {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+/* copyright section */
+
+.copyrightFlex {
+    min-height: 3vh;
+    background-color: black;
+    color: grey;
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+}
