@@ -13,10 +13,6 @@ html {
     font-size: 125%;
 }
 
-body {
-    position: fixed;
-}
-
 img {
     width: 100%;
     height: auto;
